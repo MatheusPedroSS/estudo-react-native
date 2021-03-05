@@ -1,17 +1,24 @@
 import React from 'react';
 import { Text } from 'react-native';
 
-function App(){
-    return (
-    <Text>
-        Primeiro Componente
-    </Text>
-    )
+function App () {
+    return <Text>Primeiro Componente</Text>
 }
 
-// function App(){
-//     const jsx = <Text>Primeiro Componente</Text>
-//     return jsx
+// Formas possiveis de criação de Componentes:
+
+// export default function () {
+//     return <Text>Primeiro Componente</Text>
 // }
+
+// const App = function () {
+//     return <Text>Primeiro Componente!</Text>
+// }
+
+// export default () => {
+//     return <Text>Primeiro Componente!!</Text>
+// }
+
+// export default () => <Text>Primeiro Componente!!!</Text>
 
 export default App;
