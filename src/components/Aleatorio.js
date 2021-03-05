@@ -1,9 +1,10 @@
 import React from 'react'
 import { Text } from 'react-native'
+import Estilo from './estilo'
 
 export default ({min, max}) => {
-    const numeroGerado = Math.round((min + Math.random() * (max - min + 1)));
+    const numeroGerado = parseInt((min + Math.random() * (max - min + 1)));
     return(
-        <Text>O número gerado foi: {numeroGerado}</Text>
+        <Text style={Estilo.txtG}>O número gerado foi: {numeroGerado}</Text>
     )
 }
